@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IND SPACE.TECH | ISRO Journal</title>
+    
+    <!-- Google Fonts for that "Space/Tech" look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="star-field"></div>
+
+  <div class="header">
+    <div class="logo"><span>IND</span> SPACE.TECH</div>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="#">Launchers</a>
+      <a href="#">Science</a>
+      <a href="#">Gallery</a>
+    </nav>
+  </div>
+
+  <div class="main-wrapper">
+    <div class="content-grid">
+      
+      <!-- MAIN COLUMN -->
+      <div class="main-column">
+        
+        <div class="card" style="margin-bottom: 40px;">
+          <div class="card-image-container">
+            <!-- Added onerror fallback for robustness -->
+            <img src="https://www.isro.gov.in/media_isro/image/index/Chandrayaan3/DKS_9683Copy.JPG.webp" 
+                 alt="LVM3 Rocket Launch carrying Chandrayaan-3"
+                 onerror="this.src='https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop'">
+            <div class="image-credit">SOURCE: ISRO</div>
+          </div>
+
+          <span class="meta-tag">:: MISSION UPDATE // BHARATIYA ANTARIKSH STATION</span>
+          <h1>PARLIAMENT GIVES BAS-1 MISSION UPDATE</h1>
+          <p>A press release dated 3rd December, 2025 revealed that ISRO has finalised the configuration of all five modules of India's first space station - The Bharatiya Antariksh Station. This came after a National Level Review Committee approved its design earlier.</p>
+          <a href="bas1update.html" class="read-more">READ FULL STORY &rarr;</a>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+            <img src="https://www.isro.gov.in/media_isro/image/index/Chandrayaan3/MRM_8583.JPG.webp" 
+                 alt="LVM3 Rocket Launch"
+                 onerror="this.src='https://images.unsplash.com/photo-1517976487492-5750f3195933?q=80&w=1200&auto=format&fit=crop'">
+            <div class="image-credit">SOURCE: ISRO</div>
+          </div>
+
+          <span class="meta-tag">:: UPCOMING // GAGANYAAN</span>
+          <h1>Human Spaceflight Program</h1>
+          <p>Preparations are in full swing for India's maiden human spaceflight mission. The HLVM3 rocket is being human-rated to carry a crew of three to Low Earth Orbit. Several abort tests have already been successfully conducted.</p>
+          <a href="#" class="read-more">VIEW TECH SPECS &rarr;</a>
+        </div>
+
+      </div>
+      
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        
+        <!-- Sidebar Row: These sit side-by-side on desktop -->
+        <div class="sidebar-row"> 
+          <div class="card sidebar-section">
+            <h3>UPCOMING MISSIONS</h3>
+            <a href="#" class="sidebar-link"><span style="color:var(--tech-teal);">>></span> LVM3 M6 / NSIL</a>
+            <a href="#" class="sidebar-link"><span style="color:var(--tech-teal);">>></span> PSLV C62 / EOS N1</a>
+            <a href="#" class="sidebar-link"><span style="color:var(--tech-teal);">>></span> HLVM3 G1 / OM1</a>
+          </div>
+
+          <!-- <div class="card sidebar-section">
+            <h3>TELEMETRY</h3>
+            <div class="console-text">
+              STATUS: NOMINAL<br>
+              ORBIT: LEO/GEO<br>
+              TRACKING: ACTIVE<br>
+              <span style="color: var(--isro-green); font-weight:bold; text-shadow: 0 0 5px var(--isro-green);">SIGNAL: 100%</span>
+            </div>
+          </div> -->
+        </div>
+
+        <!-- Example of another sidebar item (News Ticker style) -->
+        <div class="card">
+            <h3>LATEST NEWS</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 10px;">Aditya-L1 has successfully entered the Halo Orbit around Lagrange Point 1.</p>
+            <a href="#" class="read-more" style="font-size: 0.8rem;">ARCHIVE &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

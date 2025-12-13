@@ -1,0 +1,96 @@
+/* * ARTICLE PAGE SPECIFIC STYLES 
+ * This file contains the centered layout and custom article typography.
+ * It is designed to be loaded AFTER the main 'style.css' file.
+ */
+
+/* 1. MAIN LAYOUT OVERRIDES */
+
+/* Main Column for Article Page - Ensures content is below the sticky header.
+ * This overrides any conflicting main-wrapper/content-grid styles 
+ * you might have for the home page.
+ */
+.main-column {
+    position: relative; /* Brings it above the star field */
+    z-index: 10;
+    padding-top: 100px; /* Space below the sticky header (adjust if header height changes) */
+    padding-bottom: 60px; /* Bottom padding for the page */
+    /* Ensure no grid/flex properties interfere */
+    display: block; 
+}
+
+
+/* 2. ARTICLE CENTERING & STYLING */
+
+/* The article-container is the single, centered block for your content */
+.article-container {
+    /* Set a max-width and use margin: auto to center the content */
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Padding to prevent text from touching the edges of the box on small screens */
+    padding: 40px 20px; 
+    
+    /* Apply a distinct background for readability against the starry field */
+    background-color: var(--glass-bg); /* Use the variable defined in style.css */
+    border-radius: 8px; 
+    
+    /* Optional: Subtle border and shadow to enhance the floating look */
+    border: 1px solid rgba(100, 255, 218, 0.1); /* Using the tech-teal glow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
+}
+
+/* 3. TYPOGRAPHY OVERRIDES (Article Readability) */
+
+.article-container h1 {
+    font-size: 2.8rem; /* Make the main title bigger */
+    color: var(--tech-teal); /* Highlight the main title */
+    text-align: center; /* Center the title */
+    margin-bottom: 10px;
+}
+
+.article-container h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.5rem;
+    color: #ccc;
+    text-align: center; /* Center the subtitle */
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.article-container h3 {
+    color: var(--isro-orange);
+    border-left: 3px solid var(--isro-orange);
+    padding-left: 15px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.article-container p {
+    color: var(--text-main); /* Slightly brighter text for the main body for high contrast */
+    text-align: left; /* Keep body text left-aligned for readability */
+}
+
+.article-meta {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-align: center; /* Center the metadata */
+    margin-bottom: 40px;
+    display: block; 
+}
+
+
+/* 4. MEDIA QUERIES (Mobile/Tablet adjustments) */
+@media (max-width: 900px) {
+    
+    /* Adjust padding for the article block on smaller screens */
+    .article-container {
+        padding: 20px 15px; /* Less padding on small screens */
+        max-width: 100%; /* Allows it to expand to almost full width */
+    }
+
+    .main-column {
+        padding-top: 120px; /* May need more padding if the header stacks on mobile */
+    }
+}
